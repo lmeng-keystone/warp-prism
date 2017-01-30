@@ -1,0 +1,26 @@
+{
+  "name": "hatchery",
+  "version": "1.0.0",
+  "description": "Spawns instantly invoked function expression modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lingqingmeng/Hatchery.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Ling Qing Meng <ling.q.meng@gmail.com> (http://lingqingmeng.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lingqingmeng/Hatchery/issues"
+  },
+  "homepage": "https://github.com/lingqingmeng/Hatchery#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
