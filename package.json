@@ -1,6 +1,6 @@
 {
   "name": "warp-prism",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Warping in modules anywhere instantly",
   "main": "index.js",
   "directories": {
@@ -14,6 +14,13 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lingqingmeng/warp-prism.git"
+  },
+  "bin": {
+    "warpin": "./index.js"
+  },
+
+  "scripts": {
+    "warpin": "./index.js"
   },
   "keywords": [
     "JS",
