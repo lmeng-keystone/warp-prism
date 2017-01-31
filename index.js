@@ -1,61 +1,15 @@
-/**
- * Scapegoat
- * https://github.com/lingqingmeng/hatchery
- *
- * Copyright (c) 
- * Licensed under the MIT license.
- */
+#!/usr/bin/env node
+var args = process.argv.slice(2);
+module.exports = (function (){
+  var Writer = require("./writer")
+  var _ = require('underscore')
+  var name = args[0] || 'default'
+  var dirpath = args[1] || 'default' 
+  var writer = new Writer(name,'/'+dirpath)//args are (name,path)
+    writer.writeModule().writeModuleSpec()
 
-var chars = {
-  '&amp;': '&',
-  '&quot;': '"',
-  '&#39;': '\'',
-  '&lt;': '<',
-  '&gt;': '>'
-};
+  function WarpPrism(){
 
-/**
- * Escape special characters in the given string of html.
- *
- * @param  {String} html
- * @return {String}
- */
-module.exports = {
-  hatch: function (){
-
-  },
-  escape: function(html) {
-    if (!html) {
-      return '';
-    }
-
-    var values = Object.keys(chars).map(function(key) { return chars[key]; });
-    var re = new RegExp('(' + values.join('|') + ')', 'g');
-
-    return String(html).replace(re, function(match) {
-      for (var key in chars) {
-        if (chars.hasOwnProperty(key) && chars[key] === match) {
-          return key;
-        }
-      }
-    });
-  },
-
-  /**
-   * Unescape special characters in the given string of html.
-   *
-   * @param  {String} html
-   * @return {String}
-   */
-  unescape: function(html) {
-    if (!html) {
-      return '';
-    }
-
-    var re = new RegExp('(' + Object.keys(chars).join('|') + ')', 'g');
-
-    return String(html).replace(re, function(match) {
-      return chars[match];
-    });
   }
-};
+  return WarpPrism
+})()

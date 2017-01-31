@@ -1,3 +1,3 @@
 var expect = require('chai').expect,
-    hatchery = require('../index'),
+    warpprism = require('../index'),
     escape = scapegoat.escape,

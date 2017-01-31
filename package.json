@@ -1,5 +1,5 @@
 {
-  "name": "hatchery",
+  "name": "warp-prism",
   "version": "1.0.0",
   "description": "Spawns instantly invoked function expression modules",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lingqingmeng/Hatchery.git"
+    "url": "git+ssh://git@github.com/lingqingmeng/warp-prism.git"
   },
   "keywords": [
     "npm"
@@ -16,11 +16,17 @@
   "author": "Ling Qing Meng <ling.q.meng@gmail.com> (http://lingqingmeng.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lingqingmeng/Hatchery/issues"
+    "url": "https://github.com/lingqingmeng/warp-prism/issues"
   },
-  "homepage": "https://github.com/lingqingmeng/Hatchery#readme",
+  "bin": {
+     "warpin": "./index.js",
+  },
+  "homepage": "https://github.com/lingqingmeng/warp-prism#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
   }
 }
