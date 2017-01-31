@@ -1,32 +1,35 @@
 {
   "name": "warp-prism",
   "version": "1.0.0",
-  "description": "Spawns instantly invoked function expression modules",
+  "description": "Warping in modules anywhere instantly",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lingqingmeng/warp-prism.git"
+    "url": "git+https://github.com/lingqingmeng/warp-prism.git"
   },
   "keywords": [
-    "npm"
+    "JS",
+    "generator",
+    "node",
+    "yeoman",
+    "yo",
+    "gulp",
+    "grunt",
+    "iife",
+    "tools"
   ],
   "author": "Ling Qing Meng <ling.q.meng@gmail.com> (http://lingqingmeng.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lingqingmeng/warp-prism/issues"
   },
-  "bin": {
-     "warpin": "./index.js",
-  },
-  "homepage": "https://github.com/lingqingmeng/warp-prism#readme",
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0"
-  },
-  "dependencies": {
-    "commander": "^2.9.0"
-  }
+  "homepage": "https://github.com/lingqingmeng/warp-prism#readme"
 }
