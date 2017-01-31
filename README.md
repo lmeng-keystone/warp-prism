@@ -5,9 +5,13 @@
 `$ npm install -g warp-prism`  
 
 ### Generate Common Data Structures & Unit Test File    
+`$ mkdir data-structures`  
+
 `$ warpin doublyLinkedList /data-structures/LinkedList`  
 
-`$ cd data-structures`  
+`$ mkdir data-structures/Trie`
+
+`$ cd data-structures/Trie`  
 
 `$ warpin trie .`  
 
