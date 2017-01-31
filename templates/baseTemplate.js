@@ -11,7 +11,7 @@ module.exports = (function (){
 				"  function "+name.capitalize()+"(){",
 				"  }", 
 				"  ",
-				"  " + name.capitalize() + ".prototype.sayHello() = function (){",
+				"  " + name.capitalize() + ".prototype.sayHello = function (){",
 				"  " + "  " + "return 'My Life for Auir!'",
 				"  }",
 				"  return " + name.capitalize(),
