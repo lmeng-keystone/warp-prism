@@ -1,10 +1,11 @@
 {
   "name": "warp-prism",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Warping in modules anywhere instantly",
   "main": "index.js",
+  "preferGlobal": "true",
   "directories": {
-    "test": "test"
+    "bin": "./bin"
   },
   "dependencies": {},
   "devDependencies": {},
@@ -22,6 +23,7 @@
   "scripts": {
     "warpin": "./index.js"
   },
+
   "keywords": [
     "JS",
     "generator",

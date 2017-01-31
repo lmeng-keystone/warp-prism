@@ -12,7 +12,7 @@ module.exports = (function (){
 				"  }", 
 				"  ",
 				"  " + name.capitalize() + ".prototype.sayHello() = function (){",
-				"  " + "  " + "return 'hello'",
+				"  " + "  " + "return 'My Life for Auir!'",
 				"  }",
 				"  return " + name.capitalize(),
 				"})()"
@@ -29,7 +29,7 @@ module.exports = (function (){
 				"  describe('Prototype methods',function (){",
 				"    it('should say hello',function (){",
 				"      var "+ name +" = new "+name.capitalize()+"();",
-				"      expect(randomizer.sayHello()).to.equal('hello')",
+				"      expect("+ name+ ".sayHello()).to.equal('My Life for Auir!')",
 				"    })",
 				"  })",
 				"})"

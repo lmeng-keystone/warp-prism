@@ -1,11 +1,10 @@
 var fs = require('fs');
 var path = require('path')
-var BaseTemplate = require('./template/baseTemplate')
+var BaseTemplate = require('./templates/baseTemplate')
 module.exports = (function (){
   function Writer(name,path){
     this.name = name;
-    console.log("__dirname: ",__dirname)
-    this.path = __dirname  + '/..' + '/' +  path 
+    this.path = path 
     this.template  = new BaseTemplate(name)
   }
 
