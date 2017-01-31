@@ -17,4 +17,9 @@
 
 `$ warpin adept`
 
-`$ warpin highTemplar`
+`$ warpin highTemplar` 
+
+
+`$ cd psionic-matrix`  
+
+`$ ls -l`  
