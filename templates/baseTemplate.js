@@ -3,7 +3,9 @@ module.exports = (function (){
 	    return this.charAt(0).toUpperCase() + this.slice(1);
 	}
 
-	function BaseTemplate(name){
+	function BaseTemplate(name,testrunner){
+		this.name = name;
+		this.testrunner = testrunner || 'chai';
 		this.module = {
 			dependencies: '',
 			lines: [
@@ -23,7 +25,7 @@ module.exports = (function (){
 			dependencies: '',
 			lines: [
 				"'use strict'", 
-				"var expect = require('chai').expect;",
+				"var expect = require('"+testrunner+"').expect;",
 				"var "+name.capitalize()+" = require('./" + name + "')",
 				"describe('"+name.capitalize()+" constructor',function (){",
 				"  describe('Prototype methods',function (){",
