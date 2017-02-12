@@ -2,10 +2,11 @@ var fs = require('fs');
 var path = require('path')
 var BaseTemplate = require('./templates/baseTemplate')
 module.exports = (function (){
-  function Writer(name,path){
+  function Writer(name,path,options){
     this.name = name;
     this.path = path 
-    this.template  = new BaseTemplate(name)
+    this.testrunner = options.testrunner || 'chai'
+    this.template  = new BaseTemplate(this.name,this.testrunner)//name, test module
   }
 
   //private method

@@ -9,12 +9,16 @@ module.exports = (function (){
   
   
   var p = args[1] || 'psionic-matrix' 
+
+
+  //use node-dash-dash for command line parshing, --chai, --sinon
+  var options = {}
   var dirpath = path.join(process.cwd(),p)
   if (!fs.existsSync(dirpath)){
     fs.mkdirSync(dirpath);
   }
 
-  var writer = new Writer(name,dirpath)//args are (name,path)
+  var writer = new Writer(name,dirpath,options)//args are (name,path)
   writer.writeModule().writeModuleSpec()
 
   function WarpPrism(){
