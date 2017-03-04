@@ -35,7 +35,6 @@ module.exports = (function (){
 
   function isCliArgument(str){
     var bool = (str.charAt(0) == '-')
-    console.log("bool: ",bool)
     return bool
   }
 })()
