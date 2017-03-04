@@ -8,7 +8,9 @@
     "bin": "./bin"
   },
   "dependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "dashdash": "^1.14.1",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {},
   "scripts": {

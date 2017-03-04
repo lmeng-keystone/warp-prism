@@ -1,12 +1,14 @@
 var fs = require('fs');
 var path = require('path')
-var BaseTemplate = require('./templates/baseTemplate')
+var templateFactory = require('./templates/templateFactory')
 module.exports = (function (){
   function Writer(name,path,options){
     this.name = name;
     this.path = path 
-    this.testrunner = options.testrunner || 'chai'
-    this.template  = new BaseTemplate(this.name,this.testrunner)//name, test module
+    this.options = options
+    this.testrunner = (options.chai) ? 'chai' : 'assert';
+    this.template  = templateFactory.create(this.name,this.testrunner,this.options)//new BaseTemplate(this.name,this.testrunner,options)
+    this.template.init()
   }
 
   //private method
