@@ -23,3 +23,8 @@
 `$ cd psionic-matrix`  
 
 `$ ls -l`  
+
+### Random notes about npm
+`npm install -g .` Installs warp prism in my local machine, so I can test it 
+`npm version patch` Bumps the version up 1 point in the last digit
+`npm publish`
